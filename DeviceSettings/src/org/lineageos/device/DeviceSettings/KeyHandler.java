@@ -24,6 +24,10 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.hardware.Sensor;
@@ -54,6 +58,8 @@ import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
 import org.lineageos.device.DeviceSettings.Constants;
+
+import vendor.oneplus.camera.CameraHIDL.V1_0.IOnePlusCameraProvider;
 
 import vendor.oneplus.camera.CameraHIDL.V1_0.IOnePlusCameraProvider;
 
@@ -90,7 +96,7 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     public static final String CLIENT_PACKAGE_NAME = "com.oneplus.camera";
-    public static final String CLIENT_PACKAGE_PATH = "/data/misc/lineage/client_package_name";
+    public static final String CLIENT_PACKAGE_PATH = "/data/misc/aosp/client_package_name";
 
     private final Context mContext;
     private final PowerManager mPowerManager;
@@ -298,5 +304,4 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         }
     }
-
 }
