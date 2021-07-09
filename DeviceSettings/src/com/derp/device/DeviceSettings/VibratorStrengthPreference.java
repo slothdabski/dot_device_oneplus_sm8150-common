@@ -53,7 +53,7 @@ public class VibratorStrengthPreference extends Preference implements
         // #define QPNP_HAP_VMAX_MIN_MV		116
         // #define QPNP_HAP_VMAX_MAX_MV		3596
         mMinValue = 0;
-        mMaxValue = 10;
+        mMaxValue = 5;
 
         mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         setLayoutResource(R.layout.preference_seek_bar);
