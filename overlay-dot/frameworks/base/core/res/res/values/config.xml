@@ -82,4 +82,7 @@
     <!-- Defines the custom pickup sensor used by various OEMs like OnePlus-->
     <string name="config_dozePickupSensorType">com.oneplus.sensor.pickup</string>
 
+    <!-- Whether to enable OnePlus Camera hack -->
+    <bool name="config_enableOnePlusCameraHack">true</bool>
+
 </resources>
